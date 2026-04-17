@@ -3,17 +3,38 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 32px;
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+  border: none;
+  border-radius: 12px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 8%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards > ul > li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 12%);
 }
 
 .cards .cards-card-body {
-  margin: 16px;
+  margin: 20px 24px 24px;
+}
+
+.cards .cards-card-body h3 {
+  margin-top: 0;
+  font-size: var(--heading-font-size-s);
+  color: var(--text-color);
+}
+
+.cards .cards-card-body p {
+  color: var(--dark-color);
+  font-size: var(--body-font-size-xs);
+  line-height: 1.6;
 }
 
 .cards .cards-card-image {

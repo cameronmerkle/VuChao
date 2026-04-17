@@ -12,12 +12,14 @@
 
 :root {
   /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --background-color: #faf8f5;
+  --light-color: #f0ebe1;
+  --dark-color: #3d3d3d;
+  --text-color: #1a1a1a;
+  --link-color: #1b6b6b;
+  --link-hover-color: #134e4e;
+  --accent-color: #c4834d;
+  --accent-hover-color: #a96b3a;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -199,18 +201,18 @@ button.button:disabled {
 
 a.button.primary,
 button.button.primary {
-  border-color: var(--text-color);
-  background-color: var(--text-color);
-  color: var(--background-color);
+  border-color: var(--link-color);
+  background-color: var(--link-color);
+  color: white;
 }
 
 a.button.primary:hover,
 a.button.primary:focus-visible,
 button.button.primary:hover,
 button.button.primary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--dark-color);
-  color: var(--light-color);
+  border-color: var(--link-hover-color);
+  background-color: var(--link-hover-color);
+  color: white;
 }
 
 a.button.primary[aria-disabled="true"],
@@ -254,17 +256,17 @@ button.button.secondary:disabled:focus-visible {
 /* high-impact call-to-action */
 a.button.accent,
 button.button.accent {
-  border-color: var(--link-color);
-  background-color: var(--link-color);
-  color: var(--background-color);
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: white;
 }
 
 a.button.accent:hover,
 a.button.accent:focus-visible,
 button.button.accent:hover,
 button.button.accent:focus-visible {
-  border-color: var(--link-hover-color);
-  background-color: var(--link-hover-color);
+  border-color: var(--accent-hover-color);
+  background-color: var(--accent-hover-color);
 }
 
 a.button.accent[aria-disabled="true"],

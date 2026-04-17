@@ -1,1 +1,96 @@
-/* add global styles that can be loaded post LCP here */
+/* Columns block refinement */
+.columns > div > div p {
+  line-height: 1.7;
+  color: var(--dark-color);
+}
+
+.columns > div > div h3 {
+  color: var(--text-color);
+}
+
+.columns > div > .columns-img-col img {
+  border-radius: 12px;
+}
+
+/* Section text alignment utility */
+main .section.center {
+  text-align: center;
+}
+
+main .section.center > div {
+  max-width: 800px;
+}
+
+main .section.center.cards-container > div {
+  max-width: 1200px;
+}
+
+main .section.center.cards-container .default-content-wrapper {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section intro text styling */
+main .section h2 {
+  color: var(--text-color);
+}
+
+main .section.center h2 {
+  margin-bottom: 0.4em;
+}
+
+/* Highlight section with warm teal background */
+main .section.dark {
+  background-color: #1b4d4d;
+  color: white;
+  margin: 0;
+  padding: 80px 0;
+}
+
+main .section.dark h2 {
+  color: white;
+}
+
+main .section.dark p {
+  color: rgb(255 255 255 / 85%);
+}
+
+main .section.dark a.button.primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+main .section.dark a.button.primary:hover,
+main .section.dark a.button.primary:focus-visible {
+  background-color: var(--accent-hover-color);
+  border-color: var(--accent-hover-color);
+}
+
+main .section.center h2 + p {
+  color: var(--dark-color);
+  font-size: var(--body-font-size-s);
+  margin-bottom: 2em;
+}
+
+/* Light section refinement */
+main .section.light,
+main .section.highlight {
+  background-color: var(--light-color);
+  margin: 0;
+  padding: 60px 0;
+}
+
+/* Footer enhancements */
+footer .footer {
+  color: var(--dark-color);
+}
+
+footer .footer a:any-link {
+  color: var(--link-color);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}

@@ -5,15 +5,77 @@
 
 .hero {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  padding: 80px 24px;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgb(26 26 26 / 70%) 0%, rgb(26 26 26 / 30%) 100%);
+  z-index: 0;
 }
 
 .hero h1 {
-  max-width: 1200px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  color: var(--background-color);
+  color: white;
+  font-size: var(--heading-font-size-xxl);
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+.hero p {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(255 255 255 / 90%);
+  font-size: var(--body-font-size-m);
+  line-height: 1.6;
+}
+
+.hero .button-wrapper {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero a.button.primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: white;
+  font-size: var(--body-font-size-s);
+  padding: 0.7em 2em;
+}
+
+.hero a.button.primary:hover,
+.hero a.button.primary:focus-visible {
+  background-color: var(--accent-hover-color);
+  border-color: var(--accent-hover-color);
+}
+
+.hero a.button.secondary {
+  border-color: white;
+  color: white;
+  font-size: var(--body-font-size-s);
+  padding: 0.7em 2em;
+}
+
+.hero a.button.secondary:hover,
+.hero a.button.secondary:focus-visible {
+  background-color: rgb(255 255 255 / 15%);
+  border-color: white;
+  color: white;
+}
+
+.hero > div {
+  position: relative;
+  z-index: 1;
+  width: 100%;
 }
 
 .hero picture {
@@ -32,6 +94,15 @@
 
 @media (width >= 900px) {
   .hero {
-    padding: 40px 32px;
+    padding: 120px 32px;
+    min-height: 600px;
+  }
+
+  .hero h1 {
+    font-size: 60px;
+  }
+
+  .hero p {
+    font-size: var(--body-font-size-m);
   }
 }
